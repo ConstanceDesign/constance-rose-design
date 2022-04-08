@@ -17,7 +17,7 @@ function Nav(props) {
             {" "}
             📸
           </span>{" "}
-          Oh Snap!
+          Constance Rose Design
         </a>
       </h2>
       <nav>

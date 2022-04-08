@@ -8,26 +8,28 @@ function About() {
       <img
         src={constanceBio}
         className="my-2"
-        style={{ width: "100%" }}
+        style={{ width: "12%" }}
         alt="cover"
       />
       <div className="my-2">
-        <p>
-          In grade two, Constance was pulled aside by her teacher and told that
-          her artwork was the equivialnt to a grade six, and that she should
-          keep drawing and being creative... and so she did!
-        </p>
+        <h2>
+          In grade two, Constance was told by her teacher that her artwork was
+          the equivalent of a grade six student, and to keep drawing and being
+          creative... so she did!
+        </h2>
 
         <p>
-          Constance is an RGD ("Registered Graphic Designer") in Ontario,
-          Canada. She has worked in creative professions for over 18 years. In
-          addition to a three-year graphic design education from St. Clair
-          College in Windsor, and most recently - a full-stack web development
-          bootcamp with the University of Toronto. She has worked in marketing
-          management, social media management, illustration, photography, and
-          copywriting. She has also directed, wrote and produced an online
-          commercial and tutorial for TecTecTec's ULT-G Satellite GPS Golf
-          Watch.
+          Constance is an Registered Graphic Designer ("RGD") in Ontario,
+          Canada. She has worked in creative professions for over 18 years. She
+          has worked in marketing management, social media management,
+          illustration, photography, and copywriting. She has also directed,
+          wrote and produced an online commercial and tutorial for French brand,
+          TecTecTec's ULT-G Satellite GPS Golf Watch.
+        </p>
+        <p>
+          In addition to a three-year graphic design education from St. Clair
+          College in Windsor, Ontario, most recently - she has almost completed
+          a full-stack web development bootcamp with the University of Toronto.
         </p>
       </div>
     </section>
