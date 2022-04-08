@@ -15,7 +15,7 @@ exports[`Nav component matches snapshot 1`] = `
         >
            📸
         </span>
-         Oh Snap!
+         Constance Rose Design
       </a>
     </h2>
     <nav>
@@ -29,7 +29,7 @@ exports[`Nav component matches snapshot 1`] = `
             data-testid="about"
             href="#about"
           >
-            About me
+            About
           </a>
         </li>
         <li
