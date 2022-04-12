@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   font-family: "Outfit", sans-serif;
-  font-weight: 500;
+  font-weight: lighter;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -96,22 +96,6 @@ header a {
   color: var(--light);
 }
 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
 button[disabled] {
   cursor: default;
   opacity: 0.8;
@@ -125,24 +109,6 @@ span[role="img"] {
   cursor: default;
 }
 
-form {
-  width: 40%;
-}
-
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
-
 li {
   list-style: none;
 }
@@ -153,13 +119,6 @@ nav a:hover {
 
 nav li {
   cursor: pointer;
-}
-
-textarea {
-  width: 600px;
-  height: 120px;
-  border: 3px solid #cccccc;
-  padding: 5px;
 }
 
 .container {
@@ -369,22 +328,6 @@ header a {
   color: var(--light);
 }
 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
 button[disabled] {
   cursor: default;
   opacity: 0.8;
@@ -402,20 +345,6 @@ form {
   width: 40%;
 }
 
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
-
 li {
   list-style: none;
 }
@@ -426,13 +355,6 @@ nav a:hover {
 
 nav li {
   cursor: pointer;
-}
-
-textarea {
-  width: 600px;
-  height: 120px;
-  border: 3px solid #cccccc;
-  padding: 5px;
 }
 
 .container {
@@ -538,7 +460,7 @@ textarea {
   margin-bottom: 25px;
 }
 
-button {
+/* button {
   background: var(--primary);
   border: 0;
   border-radius: 5px;
@@ -548,7 +470,7 @@ button {
   font-weight: 600;
   margin-bottom: 30px;
   padding: 10px 15px;
-}
+} */
 
 a {
   border-radius: 5px;

@@ -1,0 +1,172 @@
+/* CSS Variables */
+:root {
+  --rose: #ff1053;
+  --rose65: #ff4d7f;
+}
+
+section {
+  display: flexbox;
+  margin: auto;
+  width: 50%;
+  margin-left: 30vw;
+  margin-top: 5vh;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 13pt;
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-family: novecento-sans-wide, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11pt;
+  color: var(--rose);
+  margin-bottom: 50px;
+}
+
+.contactForm {
+  display: flex;
+  max-width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+input[type="text" i]:-webkit-autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid var(--rose);
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: novecento-sans-wide-book, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13pt;
+}
+
+input {
+  width: 425px;
+  border-bottom: 2px solid var(--rose);
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding-bottom: 7px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: currentColor;
+  text-decoration: none;
+  letter-spacing: 1.25px;
+  outline: none;
+  font-family: novecento-sans-wide-book, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13pt;
+  text-transform: uppercase;
+  border-style: solid;
+  box-shadow: none;
+}
+
+input::placeholder {
+  color: var(--rose);
+}
+
+input[type="text"] {
+  background-color: #000;
+  color: white;
+}
+
+input[type="email"] {
+  background-color: #000;
+  color: white;
+}
+
+input:focus {
+  border-bottom: 2px solid var(--rose);
+  font-family: novecento-sans-wide-book, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13pt;
+  text-transform: uppercase;
+}
+
+input:focus::placeholder {
+  color: #fff;
+}
+
+.error-container {
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+.error-text {
+  font-family: novecento-sans-wide, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11pt;
+  color: var(--rose);
+  margin-bottom: 25px;
+}
+
+textarea {
+  width: 425px;
+  height: 120px;
+  border: none;
+  padding: 15px 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  margin: 10px 0px;
+  line-height: 1.25;
+  text-decoration: none;
+  outline: none;
+  border-radius: 0;
+  margin-bottom: 2vh;
+  color: #000;
+}
+
+.submit-button {
+  outline: none !important;
+  font-family: novecento-sans-wide, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15pt;
+  text-transform: uppercase;
+  color: #000;
+  border: 0;
+  border-radius: 25px;
+  background-color: var(--rose);
+  padding: 10px 25px 10px 25px;
+  letter-spacing: 1.25px;
+}
+
+.submit-button:hover {
+  background-color: var(--rose65);
+  border: 0;
+}
+
+@media screen and (min-width: 900px) {
+  /* .textarea {
+    width: 30vw;
+  } */
+  /* input {
+    width: 80vw;
+  } */
+}
