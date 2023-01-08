@@ -60,5 +60,8 @@
   "devDependencies": {
     "dotenv": "^16.0.3",
     "gh-pages": "^4.0.0"
+  },
+  "engines": {
+    "node": "19.x"
   }
 }
