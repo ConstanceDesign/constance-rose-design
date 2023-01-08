@@ -423,11 +423,9 @@ left: 600px;
     @include xs {
       font-family: 'Condiment', sans-serif;
       font-weight: 700;
-      line-height: 5;
       font-size: calc(40px + 0.390625vw);
       letter-spacing: 1px;
-      font-kerning: normal;
-      margin:0;
+//       margin:0;
       padding-bottom:7vh;
     }
 
