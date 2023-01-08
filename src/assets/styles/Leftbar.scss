@@ -1,0 +1,59 @@
+.left-bar {
+  display: none;
+  width: 78px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    display: block;
+    padding: 15px 25px;
+  }
+
+  img {
+    display: block;
+    margin: 8px auto;
+    width: 70px;
+    height: auto;
+  }
+}
+
+.leftbar {
+  display: block;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0px 45px;
+  position: absolute;
+  top: 71.5%;
+  // width: 100%;
+
+  a {
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+  
+  a.active {
+    svg {
+      color: #26344e;
+    }
+  }
+  &:hover svg {
+    color: var(--rose);
+  }
+  }
+
+.leftbar-list {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+
+}
+}
+

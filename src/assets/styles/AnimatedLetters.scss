@@ -1,0 +1,77 @@
+.text-animate {
+  font-family: 'Source Code Pro',monospace;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+  color:#fff;
+}
+
+.text-animate-hover {
+  font-family: 'Condiment', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 23px;
+  display: inline-block;
+  animation-fill-mode: both;
+  text-shadow: 3px 3px 0px #ff0067, 
+  6px 6px 0px #FBB03B, 
+  9px 9px 0px #46b59b, 
+  12px 12px 0px #017e7f;
+
+
+p{
+  text-align: center;
+  font-family: "Helvetica";
+  font-size:0.8rem;
+}
+
+a{
+  color: #d52e3f;
+  text-decoration: none;
+  font-family: 'Niconne', cursive;
+  font-size: 1.2rem;
+
+}
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: #fff;
+  }
+}
+
+@for $i from 1 through 33 {
+  .text-animate._#{$i} {
+    animation-delay: #{calc($i/10)}s;
+  }
+}
+
+.text-animate-special {
+  font-family: 'Condiment', sans-serif;
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-special-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: #fff;
+  }
+}
+
+@for $i from 1 through 33 {
+  .text-animate-special._#{$i} {
+    animation-delay: #{calc($i/10)}s;
+  }
+}

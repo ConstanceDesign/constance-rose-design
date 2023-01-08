@@ -1,0 +1,47 @@
+.right-bar {
+    position: absolute;
+    bottom: 0px;
+    z-index: 999;
+    float: right;
+    // overflow: hidden;
+  
+    img {
+      float: right;
+      display: block;
+      margin: 0px 10px;
+      width: 95px;
+      height: auto;
+    }
+  }
+
+  .rightbar {
+    display: block;
+    float: right;
+    // font-size: 30px;
+    line-height: 45px;
+    // text-align: center;
+    // position: absolute;
+    // top: 71.5%;
+    // width: 100%;
+  }
+  
+  .rightbar-list {
+    // position: absolute;
+    bottom: 25px;
+    // float: right;
+    // width: 100%;
+    display: block;
+    padding: 40px;
+  
+    li {
+      a {
+        float: right;
+        padding: 20px 0;
+        display: block;
+  
+        &:hover svg {
+          color: #26344e;
+        }
+      }
+    }
+  }

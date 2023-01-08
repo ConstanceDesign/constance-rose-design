@@ -1,50 +1,24 @@
-import React, { useState } from "react";
-import Nav from "./components/Nav";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
-import ContactForm from "./components/Contact";
-import "./App.css";
+import './App.scss'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './components/pages/Home'
+import About from './components/pages/About'
+import Projects from './components/pages/Projects'
+import Contact from './components/pages/Contact'
 
 function App() {
-  const [categories] = useState([
-    {
-      name: "commercial",
-      description:
-        "Photos of grocery stores, food trucks, and other commercial projects",
-    },
-    { name: "portraits", description: "Portraits of people in my life" },
-    { name: "food", description: "Delicious delicacies" },
-    {
-      name: "landscape",
-      description: "Fields, farmhouses, waterfalls, and the beauty of nature",
-    },
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
-
   return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path="/react-portfolio/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/react-portfolio/about" element={<About />} />
+          <Route path="/react-portfolio/projects" element={<Projects />} />
+          <Route path="/react-portfolio/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </>
+  )
 }
 
 export default App;

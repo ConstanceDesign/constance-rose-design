@@ -1,0 +1,148 @@
+:root {
+  --rose: #ff0067;
+  --rose65: #ff4d7f;
+  --color-primary: hsl(336, 78%, 68%);
+  --color-secondary: hsl(16, 78%, 67%);
+  --background: hsl(230, 30%, 15%);
+  --text: hsl(310, 100%, 95%);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--background);
+  -webkit-text-fill-color: var(--background);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.home-page {
+    display: flex;
+    width: 50vw;    
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vw 0vw 15vw 25vw;
+  }
+
+  h4 {
+    font-family: 'Source Code Pro',monospace;
+    font-weight: 400;
+    letter-spacing: 1;
+      overflow: hidden;
+      // background: linear-gradient(90deg, #20252d, #ed6ea0, #ec8c69, #20252d);
+        background: linear-gradient(90deg, #20252d, #ff0067, #20252d);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: animate 8s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+    
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
+
+    .logo-img {
+      position: absolute;
+      width: 175px;
+      height: auto;
+      margin-top: 0vh;
+      // margin-bottom: -265px;
+      // margin-left: 625px;
+      border-radius: 50%;
+      border: 3px solid #20252d;
+      opacity: 0;
+      animation: rotateIn 1s linear both;
+      animation-delay: 7s;
+    }
+  
+  .img-zone {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s backwards;
+    animation-delay: 3.5s;
+  }
+
+  h5 {
+    font-family: 'Source Code Pro',monospace;
+    font-weight: 400;
+    letter-spacing: 1;
+    // margin-top: -0vh;
+    margin-bottom: -10px;
+    color: var(--rose)
+  }
+  
+
+  h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    animation: fadeIn 1s 1.8s backwards;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      35deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+  }
+
+.btnn-hover {
+  display: block;
+  max-width: 33vw;
+  min-width: 40vh;
+  font-family: 'Source Code Pro',monospace;
+  font-style: normal;
+  font-size: 15pt;
+  font-weight: 600;
+  line-height: 50px;
+  padding: 0px 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  height: 50px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  text-decoration: none;
+  animation: fadeIn 1s 1.8s backwards;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
+  border-radius: 25px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btnn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btnn-hover:focus {
+  outline: none;
+}
+
+.btnn-hover.color-8 {
+color: #171b21;
+background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+}

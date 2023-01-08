@@ -1,0 +1,517 @@
+$breakpoints: (
+  'xxs': 0,
+  'xs': 280px,
+  'sm': 480px,
+  'md': 720px,
+  'lg': 912px,
+  'xl': 1200px,
+  'xxl': 1440px,
+);
+
+@mixin xxs {
+  @media (min-width: map-get($breakpoints, 'xxs')) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, 'xs')) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: map-get($breakpoints, 'xxl')) {
+    @content;
+  }
+}
+
+.home-page,
+.about-page,
+.project-page {
+  .text-zone {
+
+    @include xxl {
+         width: 25%; 
+      display: block;
+      max-width: 720px;
+    }
+
+    @include xs {
+      overflow-y: scroll;
+      // width: 25%; 
+   // display: block;
+   // max-width: 720px;
+ }
+  }
+}
+
+.project-page {
+
+ @include xs {
+      overflow-y: scroll;
+top: 0;
+  }
+}
+
+// .home-page {
+  // @include xs {
+  // width: 50vw;
+  // margin: 15vw 10vw 15vw 10vw;
+  // }
+
+  // // @include md {
+  // //   width: 80vw;
+  // //   margin: 4vw;
+  // //   }
+
+  //   @include lg {
+  //     width: 50vw;
+  //     margin: 15vw 0vw 15vw 25vw;
+  //     }
+// }
+
+.tile-wrapper {
+  @include xs {
+  width: 80vw;
+  margin: 4vw;
+  }
+
+  @include md {
+    width: 50vw;
+    margin: 2vw;
+    }
+
+    @include lg {
+      width: 50vw;
+      margin: 2vw;
+      }
+}
+
+.text-zone-contact {
+  @include xs {
+    display: flex;
+    width: 53%;    
+    flex-direction:column;
+    align-items: center;
+    }
+
+  @include md {
+  display: flex;
+  width: 53%;    
+  flex-direction:column;
+  align-items: center;
+  padding-left: 8%;
+  }
+
+  @include lg {
+    display: flex;
+    width: 45%;    
+    flex-direction:column;
+    align-items: center;
+    padding-left: 15%;
+    }
+}
+
+.first-name {
+  @include xs {
+  margin-top: -10px;
+}
+}
+
+input {
+@include xs {
+    width: 70vw;
+  }
+  
+  @include md {
+    width: 100%;
+  }
+
+  @include lg {
+    width: 400px;
+  }
+}
+
+textarea {
+  @include xs {
+    width: 70vw;
+  }
+  
+  @include md {
+    width: 100%;
+  }
+
+  @include lg {
+    width: 400px;
+  }
+}
+
+.left-bar {
+  @include md {
+    display: block;
+    max-width: 720px;
+  }
+}
+
+// .right-bar {
+//   @include xxl {
+//     // display: block;
+//     max-width: 720px;
+//   }
+// }
+
+
+.responsive-img {
+  @include xs {
+    max-width: 300px;
+  }
+  @include lg {
+    max-width: 450px;
+  }
+}
+
+.responsive-cont {
+  @include xxs {
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.project.flex-zone {
+  @include xl {
+    width: 70vw;
+    padding-top:10vh;
+  }
+  @include lg {
+    width: 70vw;
+    padding-top:9vh;
+  }
+  @include md {
+    width: 70vw;
+    padding-top:10vh;
+  }
+  @include xxs {
+    width: 100vw;
+    margin-top: 0vw;
+  }
+}
+
+// .svg-projects {
+//   @include xl {
+//     bottom: -10px;
+//   }
+//   @include lg {
+// bottom: -10px;
+//   }
+//   // @include md {
+//   //   margin-bottom: 20px;
+//   // }
+//   // @include xs {
+//   //   margin-bottom: 20px;
+//   // }
+// }
+
+.link {
+  @include xl {
+    font-size: 2.95vh;
+left: 525px;
+position: absolute;
+margin-bottom: -15px;
+float:left;
+&:hover {
+  color: #fff;
+}
+  }
+  @include lg {
+    font-size: 2.95vh;
+   max-width: 525px;
+   position: absolute;
+    margin-bottom: -15px;
+    float:left;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include md {
+    font-size: 2.75vh;
+    right: 15%;
+    position: absolute;
+    padding-bottom: 2vh;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include xs {
+    font-size: 2.75vh;
+    right: 15%;
+    position: absolute;
+    bottom: 4%;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.repo {
+  @include xl {
+    font-size: 2.95vh;
+    position: absolute;
+    margin-bottom: -15px;
+left: 600px;
+&:hover {
+  color: #fff;
+}
+  }
+  @include lg {
+    font-size: 2.95vh;
+    max-width: 600px;
+    position: absolute;
+    margin-bottom: -15px;
+    float:left;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include md {
+    font-size: 2.75vh;
+    right: 0;
+    position: absolute;
+    padding-bottom: 2vh;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include xs {
+    font-size: 2.95vh;
+    right: 0;
+    position: absolute;
+    bottom: 4%;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// .responsive-logo {
+//   @include md {
+//     width: 120px;
+//     margin-bottom: -58px;
+//   }
+// }
+
+// .logo-img {
+//   @include sm {
+//     width: 25%;
+//   }
+//   @include md {
+//     width: 150px;
+//     margin-left: 625px;
+//   }
+//   @include xl {
+//   width: 175px;
+//   margin-left: 620px;
+// }
+// @include xxl {
+//   width: 175px;
+//   margin-left: 625px;
+// }
+// }
+
+
+  .responsive-text {
+      @include xs {
+      font-size: 5.5rem;
+      letter-spacing: 5px;
+    }
+
+    @include md {
+      font-size: 8rem;
+      letter-spacing: 8px;
+
+      @include lg {
+        font-size: 11rem;
+        min-width: 10px;
+        letter-spacing: 10px;
+    }
+  }
+}
+
+.title {
+  @include xs {
+    font-size: 6vw;
+  }
+
+  @include md {
+    font-size: 2.75rem;
+    margin-right: 4vw;
+
+  @include lg {
+    font-size: 2.25rem;
+    margin-right: 11vw;
+  }
+}
+}
+
+  p {
+    @include md {
+      font-size: 4rem;
+    }
+
+  }
+
+  .h1 {
+    @include xs {
+      font-size: 4px;
+    }
+
+    @include md {
+      font-size: 2.25px;
+
+    @include lg {
+      // font-size: 5vw;
+    }
+  }
+}
+
+  h2 {
+    @include xs {
+      font-size: 21px;
+    }
+
+    @include md {
+      font-size: 2.25rem;
+      margin-right: 4vw;
+
+    @include lg {
+      font-size: 2.25rem;
+      margin-right: 11vw;
+    }
+  }
+}
+
+  h3 {
+    @include xs {
+      font-size: 44px;
+      margin:0;
+      padding-bottom:7vh;
+    }
+
+    @include md {
+      font-size: 4.75rem;
+      padding-bottom:7vh;
+    }
+
+    @include lg {
+      font-size: 4.75rem;
+      padding-bottom:7vh;
+    }
+
+    @include xl {
+      font-size: 4.75rem;
+    }
+
+  }
+
+  h4 {
+    @include xs {
+      font-size: 2.5rem;
+      margin-top: -10px;
+      // margin-left: 50px;
+    }
+
+    @include md {
+      font-size: 3rem;
+      // margin-left: 20px;
+      margin-top: -18px;
+      margin-bottom: 20px;
+
+    @include lg {
+      font-size: 4rem;
+      // margin-left: 250px;
+      margin-top: -28px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+  h5 {
+    @include xs {
+      font-size: 2.5rem;
+      margin-bottom: -18px;
+    }
+
+    @include md {
+      font-size: 3rem;
+      margin-bottom: -15px;
+
+    @include lg {
+      font-size: 4rem;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+h6 {
+  @include xs {
+    font-size: 2rem;
+    margin:0;
+  }
+
+  // @include md {
+  //   font-size: 4.75rem;
+  // }
+
+}
+
+.responsive-button {
+  @include xxs {
+    width: none;
+  }
+  @include md {
+    display: block;
+  }
+}
+
+.hamburger-react {
+  @include md {
+    display: none;
+  }
+  }
+
+  #primary {
+    @include xs {
+      display: none;
+    }
+    @include md {
+      display: contents;
+    }
+    }

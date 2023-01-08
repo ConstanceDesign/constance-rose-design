@@ -1,41 +1,5 @@
-/* Header */
-/* .header {
-  padding: 20px;
-  font-family: "Condiment", cursive;
-  color: #fff;
-  float: right;
-} */
-
-.header h1 {
-  font-family: "Condiment", cursive;
-  font-weight: bold;
-  display: inline-block;
-  font-size: 52px;
-  color: #fff;
-  float: right;
-}
-
-.header h1 .rose {
-  color: #ff1053;
-}
-
-/* .header h1 .design {
-  color: #3a3235;
-} */
-
-.header div {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: "Outfit", sans-serif;
-  font-size: 21px;
-}
-
-.header div ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-.header div ul {
-  list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
