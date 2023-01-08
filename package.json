@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://constance.design/react-portfolio",
+  "homepage": "https://constance.design",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",

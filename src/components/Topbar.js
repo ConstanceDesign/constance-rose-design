@@ -11,7 +11,7 @@ export default function Topbar() {
     <li><NavLink
         exact="true"
         className="none"
-        to="/react-portfolio/contact"
+        to="/contact"
       >CONTACT
       </NavLink>
       </li>
@@ -19,7 +19,7 @@ export default function Topbar() {
       <li><NavLink
         exact="true"
         className="none"
-        to="/react-portfolio/projects"
+        to="/projects"
         >DEVELOPMENT
         </NavLink></li>
 
@@ -35,7 +35,7 @@ export default function Topbar() {
       <NavLink
         exact="true"
         className="none"
-        to="/react-portfolio/"
+        to="/"
         >HOME
         </NavLink></li>
 

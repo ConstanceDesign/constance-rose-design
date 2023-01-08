@@ -25,7 +25,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="btn-hover color-8"
-                to="/react-portfolio/"
+                to="/"
               >HOME
               </NavLink>
                 <a
@@ -40,14 +40,14 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="projects-link btn-hover color-8"
-                to="/react-portfolio/projects"
+                to="/projects"
               >DEVELOPMENT
               </NavLink>
               <NavLink
                 exact="true"
                 onClick={() => setOpen(!isOpen)}
                 className="contact-link btn-hover color-8"
-                to="/react-portfolio/contact"
+                to="/contact"
               >CONTACT
               </NavLink>
             </nav>

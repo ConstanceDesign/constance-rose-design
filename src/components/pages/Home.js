@@ -32,7 +32,7 @@ export default function Home() {
           <h4>You found one!</h4>
           <h2>My first name is Constance, middle name is Rose. I make digital magic with eighteen years of combined experience as a registered graphic designer and full-stack developer hybrid, with a twist of illustrator, a sparkle of copywriter, and enchanting marketing management expertise.</h2>
           <Link
-            to="/react-portfolio/contact"
+            to="/contact"
             className="btnn-hover color-8"
           >
             LET'S SYNERGIZE CREATIVE VIBES

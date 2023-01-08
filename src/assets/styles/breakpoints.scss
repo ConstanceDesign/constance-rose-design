@@ -367,7 +367,7 @@ left: 600px;
 
 .title {
   @include xs {
-    font-size: 6vw;
+    font-size: 2rem;
   }
 
   @include md {
@@ -420,7 +420,7 @@ left: 600px;
 
   h3 {
     @include xs {
-      font-size: 44px;
+      font-size: 40px;
       margin:0;
       padding-bottom:7vh;
     }
