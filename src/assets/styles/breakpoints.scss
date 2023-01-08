@@ -421,7 +421,7 @@ left: 600px;
 
   h3 {
     @include xs {
-      font-size: 2vw;
+      font-size: 5vw;
       margin:0;
       padding-bottom:7vh;
     }
@@ -495,8 +495,8 @@ h6 {
 
 input{
   @include xs {
-  border-left: 3px solid #20252d;
-  border-right: 3px solid #20252d;
+  border-left: 5px solid #20252d;
+  border-right: 5px solid #20252d;
 }
 }
 
