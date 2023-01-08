@@ -421,7 +421,8 @@ left: 600px;
 
   h3 {
     @include xs {
-      font-size: 4px;
+      font-size: 18px;
+      letter-spacing: 23px;
       margin:0;
       padding-bottom:7vh;
     }
