@@ -421,9 +421,10 @@ left: 600px;
 
   h3 {
     @include xs {
-      font-size: 4rem;
+      font-size: 4.75rem;
       margin:0;
       padding-bottom:7vh;
+
     }
 
     @include md {
@@ -491,13 +492,6 @@ h6 {
   //   font-size: 4.75rem;
   // }
 
-}
-
-input{
-  @include xs {
-  border-left: 3px solid #20252d;
-  border-right: 3px solid #20252d;
-}
 }
 
 .responsive-button {
