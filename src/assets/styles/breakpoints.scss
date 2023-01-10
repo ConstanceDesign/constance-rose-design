@@ -419,29 +419,28 @@ left: 600px;
   }
 }
 
-  h3 {
-    @include xs {
-      font-size: 4.75rem;
-      margin:0;
-      padding-bottom:7vh;
+  // h3 {
+  //   @include xs {
+  //     font-size: 4.75rem;
+  //     margin:0;
+  //     padding-bottom:7vh;
+  //   }
 
-    }
+  //   @include md {
+  //     font-size: 4.75rem;
+  //     padding-bottom:7vh;
+  //   }
 
-    @include md {
-      font-size: 4.75rem;
-      padding-bottom:7vh;
-    }
+  //   @include lg {
+  //     font-size: 4.75rem;
+  //     padding-bottom:7vh;
+  //   }
 
-    @include lg {
-      font-size: 4.75rem;
-      padding-bottom:7vh;
-    }
+  //   @include xl {
+  //     font-size: 4.75rem;
+  //   }
 
-    @include xl {
-      font-size: 4.75rem;
-    }
-
-  }
+  // }
 
   h4 {
     @include xs {
