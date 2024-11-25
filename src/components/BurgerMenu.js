@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/styles/index.scss'
-import resume from '../constance-mitchell-resume.pdf'
+import resume from '../constance_mitchell_resume_2024.pdf'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/images/rose-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
