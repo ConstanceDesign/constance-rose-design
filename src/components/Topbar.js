@@ -27,7 +27,7 @@ export default function Topbar() {
         exact="true"
         target="_blank"
         rel="noreferrer"
-        href="https://indd.adobe.com/view/b18b46e7-2f3b-4162-b00e-79d04550e0be"
+        href="https://assets.adobe.com/id/urn:aaid:sc:US:8b71c99c-246c-42d3-8d7a-19e49f42e001?view=published"
         >DESIGN
         </a></li>
       
