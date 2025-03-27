@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f9212f1f.css",
+    "main.js": "/static/js/main.b572c212.js",
+    "static/js/453.bb257cf5.chunk.js": "/static/js/453.bb257cf5.chunk.js",
+    "static/media/tech-init.png": "/static/media/tech-init.ee4f519c025afaa804cd.png",
+    "static/media/uft.png": "/static/media/uft.a9dc2973b69c2c2c9716.png",
+    "static/media/avatar-2.png": "/static/media/avatar-2.021c734fb753541a4d64.png",
+    "static/media/social-orbit.png": "/static/media/social-orbit.352ebcac23b0545c3821.png",
+    "static/media/market-maestro.png": "/static/media/market-maestro.5e349e4ee7c4c869c3e6.png",
+    "static/media/company-database.png": "/static/media/company-database.1e2c845d7d84cb9481c8.png",
+    "static/media/weather-app.png": "/static/media/weather-app.5b7f955ea1520b32af32.png",
+    "static/media/secure-password.png": "/static/media/secure-password.c260b54a9cab761533c4.png",
+    "static/media/constance_mitchell_resume_2024.pdf": "/static/media/constance_mitchell_resume_2024.b8d983c54e7785a5c8dd.pdf",
+    "static/media/finish-line.png": "/static/media/finish-line.767e2047f8251dbe22c6.png",
+    "static/media/note-taking-app.png": "/static/media/note-taking-app.c4a2960691e01809c40f.png",
+    "static/media/doer.png": "/static/media/doer.898002e5a300105131e1.png",
+    "static/media/rose-logo.png": "/static/media/rose-logo.f58ef8cfbc4db10c22c3.png",
+    "index.html": "/index.html",
+    "main.f9212f1f.css.map": "/static/css/main.f9212f1f.css.map",
+    "main.b572c212.js.map": "/static/js/main.b572c212.js.map",
+    "453.bb257cf5.chunk.js.map": "/static/js/453.bb257cf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9212f1f.css",
+    "static/js/main.b572c212.js"
+  ]
+}
