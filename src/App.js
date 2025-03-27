@@ -5,6 +5,7 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Projects from './components/pages/Projects'
 import Contact from './components/pages/Contact'
+// import ThemeSwitcher from './components/ThemeSwitcher';
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
-    </>
-  )
+    {/* </><div> */}
+        {/* <ThemeSwitcher /> */}
+      {/* </div> */}
+      </>
+    );
 }
 
 export default App;

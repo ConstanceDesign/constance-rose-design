@@ -9,3 +9,19 @@ body {
   display: block;
   /* overflow: hidden; */
 }
+
+/* Light and dark mode styles for the body */
+/* body {
+  background-color: #fff;  /* Default light theme background */
+  /* color: #333;  Default dark theme text color */
+/* } */
+
+/* body.dark { */
+  /* background-color: #333;  Dark mode background */
+  /* color: #fff;  Dark mode text color */
+/* } */
+
+/* Theme switcher button appearance */
+/* .react-switch { */
+  /* margin: 10px; */
+/* } */ 
