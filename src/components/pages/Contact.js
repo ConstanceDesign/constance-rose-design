@@ -6,11 +6,12 @@ import Avatar from '../../assets/images/avatar-2.png'
 
 export default function Contact() {
   const [letterClass] = useState('text-animate-special')
+  const [messageStatus, setMessageStatus] = useState('')
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
-
+  
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -20,16 +21,13 @@ export default function Contact() {
       )
       .then(
         () => {
-          alert('Your message has been sent!')
-          window.location.reload()
+          setMessageStatus('Message sent successfully!')
+          e.target.reset()
         },
-        (error) => {
-          console.error('EmailJS error:', error)
-          alert('Sorry, your message failed to send. Try again.')
+        () => {
+          setMessageStatus('Sorry, your message failed to send. Try again.')
         }
       )
-
-    e.target.reset()
   }
 
   return (
@@ -101,6 +99,7 @@ export default function Contact() {
             </li>
           </ul>
         </form>
+        {messageStatus && <p className="message-status">{messageStatus}</p>}
       </div>
     </div>
   )

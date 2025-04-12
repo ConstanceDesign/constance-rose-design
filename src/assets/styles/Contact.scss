@@ -142,6 +142,12 @@ font-family: 'Source Sans', sans-serif;
   margin-bottom: 25px;
 }
 
+.message-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green; // or red for error
+}
+
 textarea {
   position: relative;
   height: 100px;
