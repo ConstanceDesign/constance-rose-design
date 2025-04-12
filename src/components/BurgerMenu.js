@@ -63,7 +63,7 @@ export default function BurgerMenu({ isOpen, setOpen }) {
                   onClick={() => setOpen(!isOpen)}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.linkedin.com/in/constancezonta/"
+                  href="https://www.linkedin.com/in/constance-design/"
                 >
                   <FontAwesomeIcon icon={faLinkedin} color="#465366" />
                 </a>

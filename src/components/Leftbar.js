@@ -2,7 +2,7 @@ import React from 'react'
 import '../assets/styles/index.scss'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/images/rose-logo.png'
-import resume from '../constance_mitchell_resume_2024.pdf'
+import resume from '../Constance Mitchell Resume 2025.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -28,7 +28,7 @@ export default function Leftbar() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/constancezonta/"
+            href="https://www.linkedin.com/in/constance-design/"
             alt="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#465366" />
