@@ -46,15 +46,29 @@ module.exports = async function handler(req, res) {
       ? LeoProfanity.clean(userMessage)
       : userMessage
 
+    console.log('SMTP config check', {
+      host: process.env.EMAIL_SERVER_HOST,
+      port: process.env.EMAIL_SERVER_PORT,
+      user: process.env.EMAIL_SERVER_USER,
+      from: process.env.EMAIL_FROM,
+      to: process.env.EMAIL_TO,
+    })
+
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_SERVER_HOST,
       port: Number(process.env.EMAIL_SERVER_PORT),
       secure: Number(process.env.EMAIL_SERVER_PORT) === 465,
+      requireTLS: Number(process.env.EMAIL_SERVER_PORT) === 587,
       auth: {
         user: process.env.EMAIL_SERVER_USER,
         pass: process.env.EMAIL_SERVER_PASSWORD,
       },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 10000,
     })
+
+    console.log('About to send email...')
 
     await transporter.sendMail({
       from: process.env.EMAIL_FROM,
@@ -81,9 +95,13 @@ ${finalMessage}
       `,
     })
 
+    console.log('Email sent successfully')
+
     return res.status(200).json({ ok: true })
   } catch (error) {
     console.error('API contact error:', error)
-    return res.status(500).json({ error: 'Failed to send message.' })
+    return res.status(500).json({
+      error: error && error.message ? error.message : 'Failed to send message.',
+    })
   }
 }
