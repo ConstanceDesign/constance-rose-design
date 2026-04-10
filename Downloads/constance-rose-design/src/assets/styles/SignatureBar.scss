@@ -1,0 +1,54 @@
+.signature-bar {
+  position: relative;
+//    align-items: start;
+   width: 100vw;
+   left: 50%;
+   right: 50%;
+      margin-left: -50vw;
+   margin-right: -50vw;
+  padding: 0 0 0.9rem;
+  opacity: 0.68;
+}
+
+.signature-bar__lineWrap {
+  position: relative;
+  width: calc(100% + 50px);
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.signature-bar__line {
+  display: block;
+width: calc(100% + 50px);
+  height: 1px;
+  background: rgba(255, 0, 103, 0.28);
+}
+
+.signature-bar__mark {
+  position: absolute;
+ width: calc(100% + 50px);
+  max-width: none;
+  object-fit: contain;
+  object-position: left center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.82;
+  z-index: 1;
+  filter: none;
+}
+
+@media (max-width: 875px) {
+  .signature-bar__mark {
+    height: 5rem;
+    top: -1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .signature-bar__mark {
+    height: 4.2rem;
+    top: -1.45rem;
+  }
+}

@@ -1,0 +1,127 @@
+$main-color: #ff0067;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#top-nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 0;
+}
+
+.top-nav__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 2rem;
+}
+
+.top-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.top-nav__name {
+  font-family: 'Source Code Pro', monospace;
+  font-size: clamp(0.95rem, 0.2vw + 0.9rem, 1rem);
+  line-height: 1;
+  color: #56667f;
+}
+
+#top-nav nav {
+  margin-left: auto;
+}
+
+#primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3.125rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#primary li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: none;
+}
+
+#primary a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  white-space: nowrap;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.95rem, 0.2vw + 0.9rem, 1rem);
+  line-height: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    $main-color,
+    $main-color 50%,
+    #56667f 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: background-position 0.3s ease-in-out;
+}
+
+#primary a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3125rem;
+  width: 0;
+  height: 2px;
+  background: $main-color;
+  transition: width 0.3s ease-in-out;
+}
+
+#primary a:hover,
+#primary a:focus-visible {
+  background-position: 0%;
+}
+
+#primary a:hover::before,
+#primary a:focus-visible::before,
+#primary a.active::before {
+  width: 100%;
+}
+
+body.theme-dark {
+  background: #20252d;
+}
+
+body.theme-light {
+  background: #f7f3ee;
+}
+
+body.hand-cursor-enabled,
+body.hand-cursor-enabled a,
+body.hand-cursor-enabled button {
+  cursor: pointer;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.page {
+  width: 100%;
+}

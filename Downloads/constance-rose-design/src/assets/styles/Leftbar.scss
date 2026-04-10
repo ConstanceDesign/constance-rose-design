@@ -1,0 +1,111 @@
+.left-bar {
+  display: block;
+  width: 78px;
+  height: 100vh;
+  position: fixed;
+  top: 15px;
+  z-index: 4000;
+  pointer-events: none;
+
+  .logo {
+    display: block;
+    width: 100%;
+    padding: 1rem 3rem;
+    pointer-events: auto;
+  }
+
+  img {
+    display: block;
+    width: 67px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.leftbar {
+  position: absolute;
+  left: 0;
+  bottom: 11.5vw;
+  z-index: 4001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  width: 78px;
+  margin: 0;
+  padding: 0 4rem;
+  list-style: none;
+  pointer-events: auto;
+}
+
+.leftbar li {
+  position: relative;
+}
+
+.leftbar__link {
+  position: relative;
+  z-index: 4002;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 4rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.leftbar__link svg {
+  font-size: 2.25rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.leftbar__link:hover,
+.leftbar__link:focus-visible {
+  color: var(--rose);
+}
+
+.leftbar__link:hover svg,
+.leftbar__link:focus-visible svg {
+  color: var(--rose);
+}
+
+.leftbar__link:focus-visible {
+  outline: none;
+}
+
+.leftbar__button {
+  appearance: none;
+}
+
+.leftbar-tooltip-portal {
+  position: fixed;
+  z-index: 7000;
+  pointer-events: none;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(16, 22, 34, 0.92);
+  color: #f7eef5;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+@media screen and (max-width: 900px) {
+  .left-bar {
+    display: none;
+  }
+}
