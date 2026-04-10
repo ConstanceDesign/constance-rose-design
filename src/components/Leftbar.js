@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 import '../assets/styles/index.scss'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/images/rose-logo.png'
-import resume from '../constance_mitchell_resume_2024.pdf'
+import resume from '../Constance_Zonta_Resume_2026.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
