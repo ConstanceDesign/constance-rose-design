@@ -276,9 +276,10 @@
 .field-error {
   margin: 0.45rem 0 0;
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 0.96rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   line-height: 1.4;
-  color: #ff9db9;
+  color: #e23f66;
 }
 
 .contact-form__actions {
@@ -301,7 +302,8 @@
 .form-status {
   margin: 1rem 0 0;
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
+font-weight: 300;
   line-height: 1.5;
 }
 
@@ -310,7 +312,7 @@
 }
 
 .form-status--error {
-  color: #ff9db9;
+  color: #e23f66;
 }
 
 .form-field input:-webkit-autofill,
@@ -395,7 +397,7 @@
   .contact-form-response,
   .field-error,
   .form-status {
-    font-size: 0.98rem;
+    font-size: 1.5rem;
   }
 
   .form-field label {
