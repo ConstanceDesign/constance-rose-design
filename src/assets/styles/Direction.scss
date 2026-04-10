@@ -1,0 +1,266 @@
+.direction-page {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 20rem 0rem 0rem 5rem;
+  color: #f5f5f5;
+}
+
+.direction-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+.direction-hero__content {
+  min-width: 0;
+}
+
+.direction-hero__eyebrow,
+.direction-section__eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.direction-hero__title {
+  margin: 0;
+  max-width: 11ch;
+  line-height: 0.9;
+}
+
+.direction-hero__title-accent {
+  display: block;
+  font-family: 'Ivy Presto Display', Georgia, serif;
+  font-size: clamp(3.2rem, 5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #f3efe7;
+}
+
+.direction-hero__title-main {
+  display: block;
+  font-family: 'Ivy Presto Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(3.2rem, 5vw, 4.5rem);
+  letter-spacing: -0.055em;
+  color: #ffffff;
+}
+
+.direction-hero__lede {
+  max-width: 36rem;
+  margin: 1.25rem 0 0;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(1.5rem, 1.75vw, 2rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.direction-hero__intro {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  max-width: 34rem;
+}
+
+.direction-hero__intro p,
+.direction-copy p,
+.personality-card p,
+.media-card figcaption {
+  margin: 1rem;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.72;
+  color: #59708b;
+}
+
+.direction-hero__media {
+  display: grid;
+  gap: 1rem;
+}
+
+.media-card,
+.facts-panel,
+.personality-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+.media-card {
+  padding: 1rem;
+}
+
+.media-card__placeholder {
+  min-height: 220px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(135deg, rgba(219, 182, 191, 0.18), rgba(176, 122, 141, 0.08)),
+    rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.42);
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.92rem;
+}
+
+.media-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+}
+
+.media-card figcaption {
+  margin-top: 0.85rem;
+  font-size: 0.92rem;
+}
+
+.direction-section {
+  margin-top: 4rem;
+}
+
+.direction-section__heading {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.direction-section__heading h2,
+.direction-copy h2 {
+  margin: 0;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.strength-pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.strength-pill {
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.84);
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.direction-section--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.direction-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.facts-panel {
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.fact-row {
+  display: grid;
+  gap: 0.3rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fact-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fact-row__label {
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.fact-row__value {
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.6;
+}
+
+.personality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.personality-card {
+  padding: 1.2rem;
+}
+
+.personality-card h3 {
+  margin: 0 0 0.75rem;
+  font-family: 'Neue Haas Grotesk Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+@media (max-width: 980px) {
+  .direction-hero,
+  .direction-section--split,
+  .personality-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .direction-hero__intro,
+  .direction-hero__lede {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .direction-page {
+    padding-top: 2rem;
+  }
+
+  .direction-hero__title {
+    max-width: 10ch;
+  }
+
+  .direction-hero__title-main {
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+  }
+
+  .media-card__placeholder {
+    min-height: 200px;
+  }
+
+  .strength-pill {
+    width: 100%;
+  }
+}

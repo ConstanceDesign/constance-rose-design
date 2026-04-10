@@ -1,0 +1,107 @@
+$main-color: #ff0067;
+$font-color: rgba(255, 255, 255, 0.75);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#top-nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.top-nav__inner {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 4rem;
+}
+
+.top-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#top-nav nav {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  margin-left: 2rem;
+  min-width: 0;
+}
+
+#primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#primary li {
+  display: block;
+  margin: 0 0 0 1rem;
+  padding: 0.75vw;
+  float: none;
+}
+
+#primary li:first-child {
+  margin-left: 0;
+}
+
+#primary li a {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.85rem, 1vw + 1rem, 1.35rem);
+  line-height: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    $main-color,
+    $main-color 50%,
+    $font-color 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: background-position 0.3s ease-in-out;
+}
+
+#primary li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3125rem;
+  width: 0;
+  height: 2px;
+  background: $main-color;
+  transition: width 0.3s ease-in-out;
+}
+
+#primary li a:hover,
+#primary li a:focus-visible {
+  background-position: 0%;
+}
+
+#primary li a:hover::before,
+#primary li a:focus-visible::before {
+  width: 100%;
+}

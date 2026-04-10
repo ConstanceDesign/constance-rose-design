@@ -1,0 +1,434 @@
+:root {
+  --rose: #ff0067;
+  --rose-soft: #ff4d7f;
+  --color-primary: hsl(336, 78%, 68%);
+  --color-secondary: hsl(16, 78%, 67%);
+  --background: #182955;
+  --text: #f7eef5;
+  --text-soft: rgba(247, 238, 245, 0.84);
+  --text-muted: rgba(247, 238, 245, 0.66);
+  --panel-max: 1240px;
+  --border-soft: rgba(255, 255, 255, 0.12);
+  --surface-soft: rgba(255, 255, 255, 0.03);
+}
+
+.contact-page {
+  min-height: calc(100vh - 90px);
+  padding: 14rem 1.5rem 5rem;
+  overflow: visible;
+}
+
+.contact-layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-layout__inner {
+  width: 100%;
+  max-width: var(--panel-max);
+  display: grid;
+  grid-template-columns: 200px minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.contact-portrait-wrap {
+  width: 80%;
+  padding-top: 6.4rem;
+}
+
+.contact-portrait-card {
+  width: 100%;
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  padding: 0.55rem;
+}
+
+.contact-portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+}
+
+.contact-portrait-meta {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-portrait-meta__item {
+  margin: 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-soft);
+  opacity: 0.75;
+}
+
+.contact-portrait-meta__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose-soft);
+}
+
+.contact-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-kicker {
+  margin: 0 0 0.9rem;
+  margin-bottom: 1.75rem;
+  opacity: 0.85;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-top: 3vw;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose-soft);
+}
+
+.contact-title {
+  margin: 0;
+  max-width: 12ch;
+  font-family: "IvyPresto Display", serif;
+  font-weight: 600;
+  font-size: clamp(6.8rem, 7vw, 9.8rem);
+  line-height: 0.92;
+  padding-top: 0;
+  color: var(--text);
+  animation: heroHeadlineReveal 0.9s ease-out both;
+}
+
+.contact-subtitle {
+  margin: 3rem 0 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.73rem, 2.4vw, 2.3rem);
+  line-height: 1.25;
+  max-width: 29ch;
+  background-image: linear-gradient(
+    35deg,
+    rgba(237, 110, 160, 0.88),
+    rgba(236, 140, 105, 0.88)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: heroSubReveal 1s ease-out 0.15s both;
+}
+
+.contact-summary {
+  max-width: 43ch;
+  margin: 1.2rem 0 0;
+  font-weight: 400;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  line-height: 1.5;
+  color: var(--text-soft);
+  animation: heroSubReveal 1s ease-out 0.15s both;
+}
+
+.contact-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding-top: 7.1rem;
+}
+
+.contact-form-copy {
+  padding: 1.4rem 1.5rem;
+}
+
+.contact-form-copy__kicker {
+  margin: 0 0 0.85rem;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose-soft);
+}
+
+.contact-form-title {
+  margin: 0;
+   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+ font-size: 0.75rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.contact-form-text {
+  margin: 0 0 0.9rem;
+  margin-bottom: 1rem;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 500;
+ font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.contact-form-response {
+  margin: 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+ font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.contact-form-panel {
+  padding: 1.5rem;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  margin-bottom: 0.85rem;
+  opacity: 0.85;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-required {
+  color: var(--rose-soft);
+  margin-left: 0.18rem;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  outline: none;
+  box-shadow: none;
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.form-field input {
+  min-height: 58px;
+  padding: 0 1.75rem;
+   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+   font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.form-field textarea {
+  min-height: 160px;
+  padding: 1.4rem 1.75rem;
+  resize: vertical;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(247, 238, 245, 0.45);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.field-error {
+  margin: 0.45rem 0 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 0.96rem;
+  line-height: 1.4;
+  color: #ff9db9;
+}
+
+.contact-form__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.contact-form__actions .btnn-hover {
+  width: auto;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 54px;
+  font-size: 1.25rem;
+  padding: 0 1.2rem;
+  flex: 0 0 220px;
+}
+
+.form-status {
+  margin: 1rem 0 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.form-status--success {
+  color: #f7eef5;
+}
+
+.form-status--error {
+  color: #ff9db9;
+}
+
+.form-field input:-webkit-autofill,
+.form-field input:-webkit-autofill:hover,
+.form-field input:-webkit-autofill:focus,
+.form-field textarea:-webkit-autofill,
+.form-field textarea:-webkit-autofill:hover,
+.form-field textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f7eef5;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.03) inset;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@media screen and (max-width: 1180px) {
+  .contact-layout__inner {
+    grid-template-columns: 180px minmax(0, 0.92fr) minmax(360px, 1.08fr);
+    gap: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-layout__inner {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .contact-portrait-wrap {
+    padding-top: 0;
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .contact-secondary {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .contact-page {
+    padding: 7rem 1.25rem 4rem;
+  }
+
+  .contact-summary {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact-page {
+    min-height: auto;
+    padding: 5.5rem 1rem 3rem;
+  }
+
+  .contact-kicker,
+  .contact-form-copy__kicker {
+    font-size: 0.74rem;
+  }
+
+  .contact-title {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 12vw, 4.2rem);
+    line-height: 0.96;
+  }
+
+  .contact-subtitle {
+    max-width: 100%;
+    margin-top: 2rem;
+    font-size: clamp(1.2rem, 6vw, 1.55rem);
+  }
+
+  .contact-summary {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .contact-form-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .contact-form-text,
+  .contact-form-response,
+  .field-error,
+  .form-status {
+    font-size: 0.98rem;
+  }
+
+  .form-field label {
+    font-size: 0.78rem;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    font-size: 0.98rem;
+  }
+
+  .contact-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-form__actions .btnn-hover {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    flex: 1 1 auto;
+  }
+
+  .contact-portrait-card {
+    border-radius: 16px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    border-radius: 10px;
+  }
+}

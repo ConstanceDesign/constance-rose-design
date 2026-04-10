@@ -1,0 +1,20 @@
+.cursor-hand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.cursor-hand img {
+  display: block;
+  width: 90px;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body.hand-cursor-enabled * {
+  cursor: none !important;
+}
